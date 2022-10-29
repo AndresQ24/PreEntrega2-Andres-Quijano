@@ -1,0 +1,1726 @@
+/* LA LETRA */
+
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'EB Garamond', serif 
+font-family: 'Barlow', sans-serif;
+*/
+
+/* IDEAS DE COLORES 
+
+Blanco FFF
+Negro 000
+Variacion color negro #212121
+Gris 5E5E5E
+Azul claro 9EE4FF
+Verde rgb(23, 197, 110)
+
+Un fondo que tal vez podria funcionar:
+rgba(178, 215, 232, 0.2)
+
+*/
+
+/* FORMAS DECORACION DE LA PAGINA PRINCIPAL */
+
+#cuadrado {
+  width: 50px;
+  height: 50px;
+  background: rgb(23, 197, 110);
+  position: absolute;
+  top: 800px;
+  left: 100px;
+}
+
+#cuadrado2 {
+  width: 25px;
+  height: 25px;
+  background: rgb(23, 197, 110);
+  position: absolute;
+  top: 600px;
+  left: 120px;
+}
+
+#cuadrado3 {
+  width: 25px;
+  height: 25px;
+  border: 3px solid #555;
+  position: absolute;
+  top: 100px;
+  left: 335px;
+}
+
+#cuadrado4 {
+  width: 50px;
+  height: 50px;
+  background: rgb(23, 197, 110);
+  position: absolute;
+  top: 800px;
+  right: 100px;
+}
+
+.lineaVertical {
+  background-color: #5E5E5E;
+  height: 400px;
+  width: min-content;
+  position: absolute;
+  top: 100px;
+  left: 130px;
+}
+
+.lineaVertical2 {
+  background-color: #5E5E5E;
+  height: 100px;
+  width: min-content;
+  position: absolute;
+  top: -10px;
+  left: 350px;
+}
+
+.lineaVertical3 {
+  background-color: #5E5E5E;
+  height: 400px;
+  width: min-content;
+  position: absolute;
+  top: 350px;
+  right: 122px;
+}
+
+.lineaVertical4 {
+  background-color: #5E5E5E;
+  height: 400px;
+  width: min-content;
+  position: absolute;
+  top: 400px;
+  right: 600px;
+}
+
+#cuadrado5 {
+  width: 25px;
+  height: 25px;
+  background: rgb(23, 197, 110);
+  position: absolute;
+  top: 550px;
+  right: 450px;
+}
+
+#cuadrado6 {
+  width: 25px;
+  height: 25px;
+  border: 3px solid #555;
+  position: absolute;
+  top: 700px;
+  right: 335px;
+}
+
+#cuadrado7 {
+  width: 25px;
+  height: 25px;
+  background: rgb(23, 197, 110);
+  position: absolute;
+  top: 500px;
+  right: 750px;
+}
+
+#cuadrado8 {
+  width: 25px;
+  height: 25px;
+  border: 3px solid #555;
+  position: absolute;
+  top: 450px;
+  right: 650px;
+}
+
+/* LOS TITULOS PAGINA PRINCIPAL*/
+
+#titulo-principal {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 180px;
+  color: #fff;
+  font-family: 'Bebas Neue', cursive;
+  line-height: 99%;
+  position: absolute;
+  top: 95px;
+  left: 300px;
+}
+
+#titulo2 {
+  font-weight: 800;
+  font-size: 32px;
+  color: #5E5E5E;
+  font-family: 'Bebas Neue', cursive;
+  position: absolute;
+  top: 550px;
+  left: 625px;
+}
+
+/* EL FONDO */
+
+body {
+  background-color: #212121;
+  padding: 50px 0;
+}
+
+/* NAVEGACION - PAGINA PRINCIPAL */
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+.nav {
+  font-family: 'Titillium Web';
+  text-transform: uppercase;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: rgba(255, 255, 255, .5);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #3E8914;
+  border-right: 3px solid #2E640F;
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #2E640F;
+  border-left: 3px solid #3E8914;
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: #3DA35D;
+}
+
+/* PAGINA 1 - SOBRE MI */
+
+/* .lineaHorizontal {
+
+  background-color: #fff;
+  width: 20px;
+  position: absolute;
+  top: 100px;
+  left: 130px;
+}
+
+.lineaHorizontal2 {
+
+  background-color: #fff;
+  width: 20px;
+  position: absolute;
+  top: 800px;
+  left: 130px;
+}
+
+.lineaVertical5 {
+  background-color: #fff;
+  height: 700px;
+  position: absolute;
+  top: 100px;
+  left: 130px;
+}
+
+.lineaVertical6 {
+  background-color: #fff;
+  height: 700px;
+  position: absolute;
+  top: 100px;
+  right: 130px;
+}
+
+.lineaHorizontal3 {
+
+  background-color: #fff;
+  width: 20px;
+  position: absolute;
+  top: 100px;
+  right: 130px;
+}
+
+.lineaHorizontal4 {
+
+  background-color: #fff;
+  width: 20px;
+  position: absolute;
+  top: 800px;
+  right: 130px;
+}
+
+.cross {
+  color: rgb(23, 197, 110);
+  font-family: 'italica', cursive;
+  transform: rotate(40deg);
+  position: absolute;
+  top: 50px;
+  left: 430px;
+  animation-name: rotacion;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20%);
+  }
+}
+
+#arrowDown {
+  color: rgb(23, 197, 110);
+  font-size: 60px;
+  position: absolute;
+  top: 100px;
+  right: 930px;
+  animation-name: movimiento;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#arrowUp {
+  color: rgb(23, 197, 110);
+  font-size: 60px;
+  position: absolute;
+  top: 800px;
+  right: 930px;
+  animation-name: movimiento;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* ANIMACION ROTACION */
+@keyframes rotacion {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#cuadrado9 {
+  transform: rotate(30deg);
+  width: 25px;
+  height: 25px;
+  border: 3px solid rgb(23, 197, 110);
+  position: absolute;
+  top: 120px;
+  right: 210px;
+  animation-name: rotacion;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* ANIMACION FLOTANTE */
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 8px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+#thunder {
+  color: rgb(23, 197, 110);
+  font-size: 40px;
+  position: absolute;
+  top: 800px;
+  left: 200px;
+  animation-name: floating;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#circulo {
+  color: rgb(23, 197, 110);
+  font-size: 40px;
+  position: absolute;
+  top: 800px;
+  right: 200px;
+}
+
+#TituloPagina1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 100px;
+  color: #fff;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+}
+
+#parrafoPagina1 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+
+/* PAGINA 2 EXPERIENCIA */
+
+#TituloPagina2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 100px;
+  color: #fff;
+  position: absolute;
+  top: -40px;
+  left: 400px;
+}
+
+#parrafoPagina2 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background-color: #5E5E5E;
+}
+
+#parrafoPagina21 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  left: 390px;
+  background-color: #5E5E5E;
+}
+
+#parrafoPagina22 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  left: 770px;
+  background-color: #5E5E5E;
+}
+
+/* CONTAINER 1 - EXPERIENCIA */
+
+#padre4{
+  background-color: black;
+  height: 150px;
+  width: 1200px;
+  position: absolute;
+  top: 120px;
+  left: 200px;
+  z-index: -5;
+}
+
+.row{
+  height: 100%;
+}
+
+#hijo_cinco{
+  background-color: #212121;
+  /* background-color: #3DA35D; */
+  height: 100%;
+  width: 100%;
+}
+
+/* CONTAINER 2 - EXPERIENCIA LOS PRIMEROS PARRAFOS */
+
+#padre5{
+  background-color: #212121;
+  /* background-color: black; */
+  height: 150px;
+  width: 1200px;
+  position: absolute;
+  top: 300px;
+  left: 200px;
+}
+
+.row{
+  height: 100%;
+}
+
+/* CONTAINER 3 - EXPERIENCIA LOS SEGUNDOS PARRAFOS */
+
+#padre6{
+  background-color: #212121;
+  /* background-color: black; */
+  height: 150px;
+  width: 1200px;
+  position: absolute;
+  top: 400px;
+  left: 200px;
+}
+
+.row{
+  height: 100%;
+}
+
+#parrafoPagina23 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background-color: #5E5E5E;
+}
+
+#parrafoPagina24 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  left: 390px;
+  background-color: #5E5E5E;
+}
+
+#parrafoPagina25 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  left: 770px;
+  background-color: #5E5E5E;
+}
+
+/* PAGINA 3 ESTUDIOS */
+
+#TituloPagina3 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 100px;
+  color: #fff;
+  position: absolute;
+  top: 100px;
+  left: 750px;
+}
+
+#parrafoPagina3 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 300px;
+  left: 200px;
+}
+
+#parrafoPagina31 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 450px;
+  left: 200px;
+}
+
+#parrafoPagina32 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 600px;
+  left: 200px;
+}
+
+#etiqueta1 {
+  padding-right: 10px;
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  top: 330px;
+  right: 560px;
+}
+
+#bar {
+  position: absolute;
+  top: 350px;
+  right: 500px;
+}
+
+#etiqueta2 {
+  padding-right: 10px;
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  top: 430px;
+  right: 560px;
+}
+
+#bar1 {
+  position: absolute;
+  top: 450px;
+  right: 500px;
+}
+
+#etiqueta3 {
+  padding-right: 10px;
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  top: 530px;
+  right: 560px;
+}
+
+#bar2 {
+  position: absolute;
+  top: 550px;
+  right: 500px;
+}
+
+#etiqueta4 {
+  padding-right: 10px;
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  top: 630px;
+  right: 560px;
+}
+
+#bar3 {
+  position: absolute;
+  top: 650px;
+  right: 500px;
+}
+
+#file {
+  background-color: #2E640F;
+}
+
+/* PAGINA 4 - CONTACTO */
+
+#TituloPagina4 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 100px;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 300px;
+}
+
+#mapa {
+  height: 350px;
+  position: absolute;
+  top: 200px;
+  right: 600px;
+}
+
+#nombre_usuario {
+  width: 20%;
+  border: 0;
+  background: #2b2b2b;
+  height: 50px;
+  font-family: 'italica', cursive;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 200px;
+  left: 260px;
+}
+
+#correo {
+  width: 20%;
+  border: 0;
+  background: #2b2b2b;
+  height: 50px;
+  font-family: 'italica', cursive;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 260px;
+  left: 260px;
+}
+
+#Comentario {
+  width: 20%;
+  border: 0;
+  background: #2b2b2b;
+  height: 250px;
+  font-family: 'italica', cursive;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 330px;
+  left: 260px;
+}
+
+#boton1 {
+  background: rgb(23, 197, 110);
+  font-family: 'italica', cursive;
+  color: white;
+  position: absolute;
+  top: 590px;
+  left: 590px;
+}
+
+/* PAGINA 5 - ADICIONAL */
+
+#TituloPagina5 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 100px;
+  color: #fff;
+  position: absolute;
+  top: 230px;
+  left: 750px;
+}
+
+#parrafoPagina5 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 400px;
+  left: 780px;
+}
+
+img {
+  border-radius: 8px;
+  max-width: 271px;
+  max-height: 186px;
+}
+
+/* #AC {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  transition: opacity 1.5s ease-in-out;
+} */
+
+/* EFECTO IMAGEN AC */
+
+.texto-encima {
+  top: 100px;
+  left: 40px;
+  font-family: 'Bebas Neue', cursive;
+  /* font-family: 'EB Garamond', serif  */
+  font-size: 30px;
+  color: #fff;
+}
+
+/* 
+#AC2 img{
+  height: 180px;
+  width: 1000px;
+} */
+
+.div1 {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.div1 .div11 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  opacity: 0;
+  transition: .5s;
+}
+
+.div1:hover .div11 {
+  opacity: 2;
+  transform: scale(1.1, 1.1);
+  z-index: 2;
+}
+
+/* EFECTO IMAGEN BP */
+
+.texto-encima1 {
+  top: 100px;
+  left: 40px;
+  font-family: 'Bebas Neue', cursive;
+  /* font-family: 'EB Garamond', serif  */
+  font-size: 30px;
+  color: #fff;
+}
+
+.C img {
+  height: 200px;
+  width: 800px;
+}
+
+.div2 {
+  position: absolute;
+  top: 200px;
+  left: 350px;
+}
+
+.div2 .div22 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: .5s;
+}
+
+.div2:hover .div22 {
+  opacity: 2;
+  transform: scale(1.1, 1.1);
+  z-index: 2;
+}
+
+/* #BP {
+  position: absolute;
+  top: 200px;
+  left: 350px;
+} */
+
+/* EFECTO IMAGEN C */
+
+.texto-encima3 {
+  top: 10px;
+  left: 40px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  color: #fff;
+}
+
+.C2 img {
+  height: 186px;
+  width: 500px;
+}
+
+.div3 {
+  position: absolute;
+  top: 400px;
+  left: 240px;
+}
+
+.div3 .div33 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  opacity: 0;
+  transition: .5s;
+}
+
+.div3:hover .div33 {
+  opacity: 2;
+  transform: scale(1.1, 1.1);
+  z-index: 2;
+}
+
+/* #C {
+  border-radius: 100%;
+  height: 186px;
+  width: 271px;
+  position: absolute;
+  top: 400px;
+  left: 240px;
+} */
+
+/* EFECTO IMAGEN M */
+
+.texto-encima4 {
+  top: 10px;
+  left: 40px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  color: #fff;
+}
+
+#M2 img {
+  height: 400px;
+  width: 250px;
+}
+
+.div4 {
+  position: absolute;
+  top: 200px;
+  right: 230px;
+}
+
+.div4 .div44 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  opacity: 0;
+  transition: .5s;
+}
+
+.div4:hover .div44 {
+  opacity: 2;
+  transform: scale(1.1, 1.1);
+  z-index: 2;
+}
+
+/* #M {
+  max-width: 271px;
+  max-height: 186px;
+  position: absolute;
+  top: 200px;
+  right: 230px;
+} */
+
+/* EFECTO IMAGEN S */
+
+.texto-encima5 {
+  top: 10px;
+  left: 40px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  color: #fff;
+}
+
+#S2 img {
+  height: 600px;
+  width: 600px;
+}
+
+.div5 {
+  position: absolute;
+  top: 200px;
+  right: 440px;
+}
+
+.div5 .div55 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  opacity: 0;
+  transition: .5s;
+}
+
+.div5:hover .div55 {
+  opacity: 2;
+  transform: scale(1.1, 1.1);
+  z-index: 2;
+}
+
+/* #S {
+  border-radius: 100%;
+  height: 186px;
+  width: 271px;
+  position: absolute;
+  top: 200px;
+  right: 350px;
+} */
+
+/* EFECTO IMAGEN SD */
+
+.texto-encima6 {
+  top: 10px;
+  left: 40px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  color: #fff;
+}
+
+#SD2 img {
+  height: 600px;
+  width: 600px;
+}
+
+.div6 {
+  position: absolute;
+  top: 400px;
+  right: 320px;
+}
+
+.div6 .div66 {
+  position: absolute;
+  top: -40px;
+  left: -50px;
+  opacity: 0;
+  transition: .5s;
+}
+
+.div6:hover .div66 {
+  opacity: 2;
+  transform: scale(1.1, 1.1);
+  z-index: 2;
+}
+
+/* #SD {
+  border-radius: 100%;
+  height: 186px;
+  width: 271px;
+  position: absolute;
+  top: 400px;
+  right: 240px;
+} */
+
+/* NAVEGACION - PAGINAS SECUNDARIAS */
+
+a:link {
+  text-decoration: none !important;
+}
+
+#homePag {
+  color: #fff;
+  position: absolute;
+  top: 90px;
+  left: 30px;
+}
+
+#home {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'italica', cursive;
+  color: white;
+  position: absolute;
+  top: 110px;
+  left: 28px;
+}
+
+#sobreMi {
+  color: #fff;
+  position: absolute;
+  top: 140px;
+  left: 30px;
+}
+
+#sm1 {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'italica', cursive;
+  color: white;
+  position: absolute;
+  top: 160px;
+  left: 20px;
+}
+
+#exp {
+  color: #fff;
+  position: absolute;
+  top: 190px;
+  left: 30px;
+}
+
+#exp1 {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'italica', cursive;
+  color: white;
+  position: absolute;
+  top: 210px;
+  left: 15px;
+}
+
+#est {
+  color: #fff;
+  position: absolute;
+  top: 240px;
+  left: 30px;
+}
+
+#est1 {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'italica', cursive;
+  color: white;
+  position: absolute;
+  top: 260px;
+  left: 25px;
+}
+
+#cont {
+  color: #fff;
+  position: absolute;
+  top: 290px;
+  left: 30px;
+}
+
+#cont1 {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'italica', cursive;
+  color: white;
+  position: absolute;
+  top: 310px;
+  left: 20px;
+}
+
+#ad {
+  color: #fff;
+  position: absolute;
+  top: 340px;
+  left: 30px;
+}
+
+#ad1 {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'italica', cursive;
+  color: white;
+  position: absolute;
+  top: 360px;
+  left: 18px;
+}
+
+/* FOOTER */
+
+.pieDePagina {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  color: white;
+}
+
+#tituloFooter {
+  font-family: 'Barlow', sans-serif;
+  font-size: 10px;
+  color: #fff;
+  top: 800px;
+  right: 640px;
+}
+
+/* PAGINA 1 - SOBRE MI */
+
+.cross {
+  color: rgb(23, 197, 110);
+  font-size: 25px;
+  font-family: 'italica', cursive;
+  transform: rotate(40deg);
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  animation-name: rotacion;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(80%);
+  }
+}
+
+#arrowDown {
+  color: rgb(23, 197, 110);
+  font-size: 60px;
+  position: absolute;
+  top: 40px;
+  left: 400px;
+  animation-name: movimiento;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#arrowUp {
+  color: rgb(23, 197, 110);
+  font-size: 60px;
+  position: absolute;
+  top: 50px;
+  left: 700px;
+  animation-name: movimiento;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* ANIMACION ROTACION */
+@keyframes rotacion {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#cuadrado9 {
+  transform: rotate(30deg);
+  width: 25px;
+  height: 25px;
+  border: 3px solid rgb(23, 197, 110);
+  position: absolute;
+  top: 10px;
+  right: 210px;
+  animation-name: rotacion;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* ANIMACION FLOTANTE */
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 8px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+#thunder {
+  color: rgb(23, 197, 110);
+  font-size: 40px;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  animation-name: floating;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#circulo {
+  color: rgb(23, 197, 110);
+  font-size: 40px;
+  position: absolute;
+  top: 30px;
+  right: 1px;
+}
+
+/* CONTAINER 1 NAVEGACION Y TITULO: SOBRE MI */
+
+#TituloPagina1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 100px;
+  color: #fff;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}
+
+#padre{
+  background-color: antiquewhite;
+  height: 300px;
+  width: 600px;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  z-index: -5;
+}
+
+.row{
+  height: 100%;
+}
+
+#hijo_uno{
+  background-color: #212121;
+  /* background-color: #3DA35D; */
+  height: 100%;
+  width: 100%;
+}
+
+/* CONTAINER 2 - PARRAFO */
+
+#parrafoPagina1 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+
+#padre1{
+  background-color: black;
+  height: 300px;
+  width: 1000px;
+  position: absolute;
+  top: 320px;
+  left: 150px;
+  z-index: -5;
+}
+
+.row{
+  height: 100%;
+}
+
+#hijo_dos{
+  background-color: #212121;
+  /* background-color: #3DA35D; */
+  height: 100%;
+  width: 100%;
+}
+
+/* CONTAINER 3 LA X LA FLECHA HACIA ABAJO Y EL CUADRADO */
+
+#padre2{
+  background-color: black;
+  height: 100px;
+  width: 900px;
+  position: absolute;
+  top: 10px;
+  left: 550px;
+  z-index: -5;
+}
+
+.row{
+  height: 100%;
+}
+
+#hijo_tres{
+  background-color: #212121;
+  /* background-color: #3DA35D; */
+  height: 100%;
+  width: 100%;
+}
+
+/* CONTAINER 4 LAS DEMAS FORMAS */
+
+#padre3{
+  background-color: black;
+  height: 100px;
+  width: 1200px;
+  position: absolute;
+  top: 550px;
+  left: 40px;
+  z-index: -5;
+}
+
+.row{
+  height: 100%;
+}
+
+#hijo_cuatro{
+  background-color: #212121;
+  /* background-color: #3DA35D; */
+  height: 100%;
+  width: 100%;
+}
+
+/* NAVEGACION PRUEBA */
+
+a:link {
+  text-decoration: none !important;
+}
+
+#homePag {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  z-index: 10;
+}
+
+#home {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'italica', cursive;
+  color: white;
+  position: absolute;
+  top: 30px;
+  left: 28px;
+  z-index: 4;
+}
+
+#sobreMi {
+  color: #fff;
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  z-index: 1;
+}
+
+#sm1 {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'italica', cursive;
+  color: white;
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  z-index: 1;
+}
+
+#exp {
+  color: #fff;
+  position: absolute;
+  top: 110px;
+  left: 30px;
+  z-index: 1;
+}
+
+#exp1 {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'italica', cursive;
+  color: white;
+  position: absolute;
+  top: 130px;
+  left: 15px;
+  z-index: 1;
+}
+
+#est {
+  color: #fff;
+  position: absolute;
+  top: 160px;
+  left: 30px;
+  z-index: 1;
+}
+
+#est1 {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'italica', cursive;
+  color: white;
+  position: absolute;
+  top: 180px;
+  left: 25px;
+  z-index: 1;
+}
+
+#cont {
+  color: #fff;
+  position: absolute;
+  top: 210px;
+  left: 30px;
+}
+
+#cont1 {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'italica', cursive;
+  color: white;
+  position: absolute;
+  top: 230px;
+  left: 20px;
+  z-index: 1;
+}
+
+#ad {
+  color: #fff;
+  position: absolute;
+  top: 260px;
+  left: 30px;
+  z-index: 1;
+}
+
+#ad1 {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'italica', cursive;
+  color: white;
+  position: absolute;
+  top: 280px;
+  left: 18px;
+  z-index: 1;
+}
+
+/* LOS MEDIA QUERIES */
+
+@media only screen and (min-width: 1534px) {
+
+
+  /* LAS FORMAS DE LA PAGINA */
+  #cuadrado {
+    width: 50px;
+    height: 50px;
+    background: rgb(23, 197, 110);
+    position: absolute;
+    top: 650px;
+    left: 110px;
+  }
+
+  #cuadrado2 {
+    width: 25px;
+    height: 25px;
+    background: rgb(23, 197, 110);
+    position: absolute;
+    top: 550px;
+    left: 120px;
+  }
+
+  #cuadrado3 {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #555;
+    position: absolute;
+    top: 100px;
+    left: 335px;
+  }
+
+  #cuadrado4 {
+    width: 50px;
+    height: 50px;
+    background: rgb(23, 197, 110);
+    position: absolute;
+    top: 685px;
+    right: 100px;
+  }
+
+  .lineaVertical {
+    background-color: #5E5E5E;
+    height: 400px;
+    width: min-content;
+    position: absolute;
+    top: 50px;
+    left: 130px;
+  }
+
+  .lineaVertical2 {
+    background-color: #5E5E5E;
+    height: 100px;
+    width: min-content;
+    position: absolute;
+    top: -10px;
+    left: 350px;
+  }
+
+  .lineaVertical3 {
+    background-color: #5E5E5E;
+    height: 400px;
+    width: min-content;
+    position: absolute;
+    top: 250px;
+    right: 122px;
+  }
+
+  .lineaVertical4 {
+    background-color: #5E5E5E;
+    height: 400px;
+    width: min-content;
+    position: absolute;
+    top: 300px;
+    right: 500px;
+  }
+
+  #cuadrado5 {
+    width: 25px;
+    height: 25px;
+    background: rgb(23, 197, 110);
+    position: absolute;
+    top: 550px;
+    right: 450px;
+  }
+
+  #cuadrado6 {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #555;
+    position: absolute;
+    top: 700px;
+    right: 335px;
+  }
+
+  #cuadrado7 {
+    width: 25px;
+    height: 25px;
+    background: rgb(23, 197, 110);
+    position: absolute;
+    top: 500px;
+    right: 650px;
+  }
+
+  #cuadrado8 {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #555;
+    position: absolute;
+    top: 450px;
+    right: 550px;
+  }
+}
+
+@media only screen and (max-width: 1533px) {
+
+  #titulo-principal {
+    color: #fff;
+    font-size: 85px;
+    position: absolute;
+    top: 210px;
+    left: 100px;
+  }
+
+  #titulo2 {
+    font-weight: 800;
+    font-size: 15px;
+    color: #5E5E5E;
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    top: 420px;
+    left: 110px;
+  }
+
+  /* LAS FORMAS DE LA PAGINA */
+
+  #cuadrado3 {
+    width: 8px;
+    height: 8px;
+    border: 3px solid #555;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .lineaVertical {
+    background-color: #5E5E5E;
+    height: 100px;
+    width: min-content;
+    position: absolute;
+    top: 450px;
+    left: 350px;
+  }
+
+  #cuadrado6 {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #555;
+    position: absolute;
+    top: 530px;
+    left: 10;
+  }
+
+  #cuadrado8 {
+    width: 15px;
+    height: 15px;
+    border: 3px solid #555;
+    position: absolute;
+    top: 570px;
+    left: 340px;
+  }
+
+  .lineaVertical2 {
+    display: none;
+  }
+
+  #cuadrado {
+    width: 25px;
+    height: 25px;
+    background: rgb(23, 197, 110);
+    position: absolute;
+    top: 580px;
+    left: 50px;
+  }
+
+  .lineaVertical3 {
+    display: none;
+  }
+
+  #cuadrado2 {
+    width: 14px;
+    height: 14px;
+    background: rgb(23, 197, 110);
+    position: absolute;
+    top: 30px;
+    left: 290px;
+  }
+
+  #cuadrado4 {
+    display: none;
+  }
+
+  .lineaVertical4 {
+    display: none;
+  }
+
+  #cuadrado5 {
+    display: none;
+  }
+
+  #cuadrado7 {
+    display: none;
+  }
+
+  /* Navegacion */
+
+  .nav {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 5;
+  }
+
+  #navsobremi {
+    text-align: none;
+    position: absolute;
+    top: 260px;
+    right: 100px;
+  }
+
+  #navbarexp {
+    position: absolute;
+    top: 330px;
+    right: 75px;
+  }
+
+  #navbarest {
+    position: absolute;
+    top: 380px;
+    right: 90px;
+  }
+
+  #navbarcont {
+    position: absolute;
+    top: 430px;
+    right: 85px;
+  }
+
+  #navbarad {
+    position: absolute;
+    top: 480px;
+    right: 80px;
+  }
+}
+
